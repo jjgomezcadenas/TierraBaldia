@@ -1,0 +1,36 @@
+\documentclass[12pt,a4paper]{book}
+%\usepackage{verse}
+%\PassOptionsToPackage{bookmarks, colorlinks=false, hidelinks}{hyperref}
+% Use PoetryTeX; http://www.ctan.org/pkg/poetrytex
+%\usepackage[numberpoems, clearpageafterpoem, useincipits]{poetrytex}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{blindtext}
+\usepackage{lipsum}
+
+%\usepackage{fancyhdr,makeidx,times,multicol,geometry}
+%\usepackage{keyval,ifthen,mparhack,manyfoot,poemscol}
+
+\newcounter{scounter}
+\newcommand\stepsect{\stepcounter{scounter}\arabic{scounter}}
+\newcommand\sect{\section*{\centering{\small{\stepsect}}}}
+\newcommand\gl{\guillemotleft}
+\newcommand\gr{\guillemotright}
+\newcommand{\glr}[1]{\gl{#1}\gr}
+
+\title{La Tierra Baldía}
+\author{J.J. Gómez Cadenas}
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter{Plan}
+\input{plan/sipnosis.tex}
+ \end{document}
